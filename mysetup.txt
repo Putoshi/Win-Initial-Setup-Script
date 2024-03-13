@@ -1,0 +1,125 @@
+##########
+# Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
+# Author: Disassembler <disassembler@dasm.cz>
+# Version: v3.10, 2020-07-15
+# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks ###
+DisableTelemetry                # EnableTelemetry
+DisableCortana                  # EnableCortana
+DisableWebSearch                # EnableWebSearch
+DisableActivityHistory          # EnableActivityHistory
+DisableLocation                 # EnableLocation
+DisableMapUpdates               # EnableMapUpdates
+DisableFeedback                 # EnableFeedback
+DisableTailoredExperiences      # EnableTailoredExperiences
+DisableAdvertisingID            # EnableAdvertisingID
+DisableWebLangList              # EnableWebLangList
+DisableErrorReporting           # EnableErrorReporting
+DisableWAPPush                  # EnableWAPPush
+
+### UWP Privacy Tweaks ###
+DisableUWPBackgroundApps        # EnableUWPBackgroundApps
+
+### Security Tweaks ###
+DisableFirewall                 # EnableFirewall
+HideAccountProtectionWarn       # ShowAccountProtectionWarn
+EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto
+SetDEPOptOut                    # SetDEPOptIn
+
+### Network Tweaks ###
+SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
+DisableRemoteAssistance         # EnableRemoteAssistance
+
+### Service Tweaks ###
+DisableUpdateMSRT               # EnableUpdateMSRT
+DisableUpdateDriver             # EnableUpdateDriver
+# EnableUpdateMSProducts          DisableUpdateMSProducts
+DisableUpdateAutoDownload       # EnableUpdateAutoDownload
+DisableUpdateRestart            # EnableUpdateRestart
+DisableMaintenanceWakeUp        # EnableMaintenanceWakeUp
+# DisableAutoRestartSignOn        EnableAutoRestartSignOn
+DisableSharedExperiences        # EnableSharedExperiences
+DisableAutoplay                 # EnableAutoplay
+DisableAutorun                  # EnableAutorun
+EnableNTFSLongPaths             # DisableNTFSLongPaths
+
+### UI Tweaks ###
+DisableActionCenter             # EnableActionCenter
+DisableLockScreen               # EnableLockScreen
+HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
+HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
+DisableLockScreenBlur           # EnableLockScreenBlur
+DisableAccessibilityKeys        # EnableAccessibilityKeys
+ShowTaskManagerDetails          # HideTaskManagerDetails
+ShowFileOperationsDetails       # HideFileOperationsDetails
+HideTaskView                    # ShowTaskView
+ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
+SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        # SetTaskbarCombineAlways
+HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
+ShowTrayIcons                   # HideTrayIcons
+DisableSearchAppInStore         # EnableSearchAppInStore
+DisableNewAppPrompt             # EnableNewAppPrompt
+DisableShortcutInName           # EnableShortcutInName
+# HideShortcutArrow               ShowShortcutArrow
+SetVisualFXPerformance          # SetVisualFXAppearance
+DisableF1HelpKey                # EnableF1HelpKey
+
+### Explorer UI Tweaks ###
+ShowExplorerTitleFullPath       # HideExplorerTitleFullPath
+ShowKnownExtensions             # HideKnownExtensions
+ShowHiddenFiles                 # HideHiddenFiles
+ShowSuperHiddenFiles            # HideSuperHiddenFiles
+EnableNavPaneExpand             # DisableNavPaneExpand
+HideSyncNotifications           # ShowSyncNotifications
+HideRecentShortcuts             # ShowRecentShortcuts
+SetExplorerThisPC               # SetExplorerQuickAccess
+ShowThisPCOnDesktop             # HideThisPCFromDesktop
+ShowUserFolderOnDesktop         # HideUserFolderFromDesktop
+ShowControlPanelOnDesktop       # HideControlPanelFromDesktop
+ShowNetworkOnDesktop            # HideNetworkFromDesktop
+# HideDesktopIcons              # ShowDesktopIcons
+# ShowBuildNumberOnDesktop      # HideBuildNumberFromDesktop
+HideDesktopFromThisPC           # ShowDesktopInThisPC
+HideMusicFromThisPC             # ShowMusicInThisPC
+HideMusicFromExplorer           # ShowMusicInExplorer
+HidePicturesFromThisPC          # ShowPicturesInThisPC
+HidePicturesFromExplorer        # ShowPicturesInExplorer
+HideVideosFromThisPC            # ShowVideosInThisPC
+HideVideosFromExplorer          # ShowVideosInExplorer
+Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
+# Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
+# HideNetworkFromExplorer       # ShowNetworkInExplorer
+# HideIncludeInLibraryMenu      # ShowIncludeInLibraryMenu
+# HideGiveAccessToMenu          # ShowGiveAccessToMenu
+# HideShareMenu                 # ShowShareMenu
+# DisableThumbnails             # EnableThumbnails
+DisableThumbnailCache           # EnableThumbnailCache
+DisableThumbsDBOnNetwork        # EnableThumbsDBOnNetwork
+
+### Application Tweaks ###
+DisableOneDrive                 # EnableOneDrive
+UninstallOneDrive               # InstallOneDrive
+UninstallMsftBloat              # InstallMsftBloat
+UninstallThirdPartyBloat        # InstallThirdPartyBloat
+# UninstallWindowsStore         # InstallWindowsStore
+DisableXboxFeatures             # EnableXboxFeatures
+# DisableFullscreenOptims       # EnableFullscreenOptims
+DisableEdgePreload              # EnableEdgePreload
+DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
+DisableIEFirstRun               # EnableIEFirstRun
+DisableMediaSharing             # EnableMediaSharing
+SetPhotoViewerAssociation       # UnsetPhotoViewerAssociation
+AddPhotoViewerOpenWith          # RemovePhotoViewerOpenWith
+# UninstallPDFPrinter           # InstallPDFPrinter
+UninstallXPSPrinter             # InstallXPSPrinter
+RemoveFaxPrinter                # AddFaxPrinter
+# UninstallFaxAndScan           # InstallFaxAndScan
+
+### Auxiliary Functions ###
+WaitForKey
+Restart
